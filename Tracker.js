@@ -57,9 +57,8 @@
 
     function flush() {
       if (!queue.length) return;
-
-      const payload = JSON.stringify(queue);
       console.log(queue);
+      const payload = JSON.stringify(queue);
       queue = [];
       navigator.sendBeacon(API_URL, payload);
     }
