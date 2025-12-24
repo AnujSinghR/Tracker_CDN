@@ -59,8 +59,8 @@
       if (!queue.length) return;
 
       const payload = JSON.stringify(queue);
+      console.log(queue);
       queue = [];
-      console.log(payload)
       navigator.sendBeacon(API_URL, payload);
     }
 
