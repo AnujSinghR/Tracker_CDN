@@ -60,7 +60,11 @@
       console.log(queue);
       const payload = JSON.stringify(queue);
       queue = [];
-      navigator.sendBeacon(API_URL, payload);
+      //navigator.sendBeacon(API_URL, payload);
+      navigator.sendBeacon(
+      API_URL,
+      new Blob([JSON.stringify(payload)], { type: "application/json" })
+      );
     }
 
     function scheduleFlush() {
