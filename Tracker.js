@@ -3,7 +3,7 @@
     /* ---------------- CONFIG ---------------- */
     const API_URL = "http://localhost:3000/collect";
     const BATCH_SIZE = 10;
-    const FLUSH_INTERVAL = 5000; // 5 sec
+    const FLUSH_INTERVAL = 5000; // 5 second
     const SESSION_TIMEOUT = 30 * 60 * 1000;
     const SESSION_KEY = "__saas_tracker_session";
 
