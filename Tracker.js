@@ -1,7 +1,7 @@
 (function () {
   try {
     /* ---------------- CONFIG ---------------- */
-    const API_URL = "https://api.yourapp.com/collect";
+    const API_URL = "https://insightengine-production.up.railway.app/collect";
     const BATCH_SIZE = 10;
     const FLUSH_INTERVAL = 5000; // 5 sec
     const SESSION_TIMEOUT = 30 * 60 * 1000;
