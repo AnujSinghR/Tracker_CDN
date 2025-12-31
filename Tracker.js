@@ -63,7 +63,7 @@
       //navigator.sendBeacon(API_URL, payload);
       navigator.sendBeacon(
       API_URL,
-      new Blob([JSON.stringify(payload)], { type: "application/json" })
+      new Blob([payload], { type: "application/json" })
       );
     }
 
